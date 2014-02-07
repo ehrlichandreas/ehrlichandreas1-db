@@ -1,0 +1,35 @@
+{
+    "name":         "ehrlichandreas/ehrlichandreas1-db",
+    "description":  "Zend Framework like database module",
+    "type":         "util",
+    "keywords": 
+    [
+    ],
+    "license":              "Unlicense",
+    "minimum-stability":    "dev",
+    "authors": 
+    [
+        {
+            "name":     "Andreas Ehrlich",
+            "email":    "ehrlich.andreas@googlemail.com"
+        }
+    ],
+    "autoload": 
+    {
+        "psr-0": 
+        {
+            "EhrlichAndreas":   "src/"
+        }
+    },
+    "require": 
+    {
+        "php":                                  ">=5.1",
+        
+        "ehrlichandreas/ehrlichandreas1-db":    "dev-master",
+        
+        "ehrlichandreas/ehrlichandreas1-util":  "dev-master"
+    },
+    "require-dev":
+    {
+    }
+}
