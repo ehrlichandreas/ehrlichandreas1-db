@@ -25,7 +25,7 @@
     {
         "php":                                  ">=5.1",
         
-        "ehrlichandreas/ehrlichandreas1-db":    "dev-master",
+        "ehrlichandreas/ehrlichandreas1-pdo":   "dev-master",
         
         "ehrlichandreas/ehrlichandreas1-util":  "dev-master"
     },
