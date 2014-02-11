@@ -1,8 +1,8 @@
 <?php 
 
-require_once 'EhrlichAndreas/Db/Exception.php';
+//require_once 'EhrlichAndreas/Db/Exception.php';
 
-require_once 'EhrlichAndreas/Db/Sql.php';
+//require_once 'EhrlichAndreas/Db/Sql.php';
 
 /**
  * Class for SQL Where generation.

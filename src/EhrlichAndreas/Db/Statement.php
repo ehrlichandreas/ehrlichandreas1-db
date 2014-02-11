@@ -1,10 +1,10 @@
 <?php 
 
-require_once 'EhrlichAndreas/Db/Exception.php';
+//require_once 'EhrlichAndreas/Db/Exception.php';
 
-require_once 'EhrlichAndreas/Db/Abstract.php';
+//require_once 'EhrlichAndreas/Db/Abstract.php';
 
-require_once 'EhrlichAndreas/Db/Statement/Interface.php';
+//require_once 'EhrlichAndreas/Db/Statement/Interface.php';
 
 /**
  * Emulates a PDOStatement for native database adapters.

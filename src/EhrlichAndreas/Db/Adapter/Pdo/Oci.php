@@ -1,11 +1,11 @@
 <?php 
 
-require_once 'EhrlichAndreas/Db/Exception.php';
+//require_once 'EhrlichAndreas/Db/Exception.php';
 
 /**
  * @see EhrlichAndreas_Db_Adapter_Pdo_Abstract
  */
-require_once 'EhrlichAndreas/Db/Adapter/Pdo/Abstract.php';
+//require_once 'EhrlichAndreas/Db/Adapter/Pdo/Abstract.php';
 
 
 /**

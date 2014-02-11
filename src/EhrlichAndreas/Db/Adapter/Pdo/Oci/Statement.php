@@ -3,7 +3,7 @@
 /**
  * @see EhrlichAndreas_Db_Adapter_Pdo_Abstract_Statement
  */
-require_once 'EhrlichAndreas/Db/Adapter/Pdo/Abstract/Statement.php';
+//require_once 'EhrlichAndreas/Db/Adapter/Pdo/Abstract/Statement.php';
 
 /**
  * Proxy class to wrap a PDOStatement object for IBM Databases.

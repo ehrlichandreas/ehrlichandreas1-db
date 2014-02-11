@@ -1,6 +1,6 @@
 <?php 
 
-require_once 'EhrlichAndreas/Util/Exception.php';
+//require_once 'EhrlichAndreas/Util/Exception.php';
 
 /**
  * Library base exception

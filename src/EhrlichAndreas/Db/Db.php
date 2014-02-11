@@ -1,10 +1,10 @@
 <?php 
 
-require_once 'EhrlichAndreas/Db/Exception.php';
+//require_once 'EhrlichAndreas/Db/Exception.php';
 
-require_once 'EhrlichAndreas/Db/Abstract.php';
+//require_once 'EhrlichAndreas/Db/Abstract.php';
 
-require_once 'EhrlichAndreas/Util/Object.php';
+//require_once 'EhrlichAndreas/Util/Object.php';
 
 /**
  * Class for connecting to SQL databases and performing common operations.

@@ -1,14 +1,14 @@
 <?php 
 
-require_once 'EhrlichAndreas/Db/Exception.php';
+//require_once 'EhrlichAndreas/Db/Exception.php';
 
-require_once 'EhrlichAndreas/Db/Adapter/Abstract.php';
+//require_once 'EhrlichAndreas/Db/Adapter/Abstract.php';
 		
-require_once 'EhrlichAndreas/Db/Expr.php';
+//require_once 'EhrlichAndreas/Db/Expr.php';
         
-require_once 'EhrlichAndreas/Db/Select.php';
+//require_once 'EhrlichAndreas/Db/Select.php';
 
-require_once 'EhrlichAndreas/Util/Object.php';
+//require_once 'EhrlichAndreas/Util/Object.php';
 
 /**
  * Class for SQL generation.

@@ -1,12 +1,12 @@
 <?php 
 
-require_once 'EhrlichAndreas/Db/Exception.php';
+//require_once 'EhrlichAndreas/Db/Exception.php';
 
-require_once 'EhrlichAndreas/Db/Abstract.php';
+//require_once 'EhrlichAndreas/Db/Abstract.php';
 
-require_once 'EhrlichAndreas/Db/Statement.php';
+//require_once 'EhrlichAndreas/Db/Statement.php';
 
-require_once 'EhrlichAndreas/Pdo/Abstract.php';
+//require_once 'EhrlichAndreas/Pdo/Abstract.php';
 
 /**
  * Proxy class to wrap a PDOStatement object.
