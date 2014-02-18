@@ -38,7 +38,7 @@
         
         "ehrlichandreas/ehrlichandreas1-pdo":   "dev-master",
         
-        "ehrlichandreas/ehrlichandreas1-util":  "dev-master"
+        "ehrlichandreas/ehrlichandreas1-util":  "0.0.1.0"
     },
     "require-dev":
     {
