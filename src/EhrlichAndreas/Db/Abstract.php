@@ -221,4 +221,3 @@ class EhrlichAndreas_Db_Abstract
     const PARAM_STR = 2;
 }
 
-?>

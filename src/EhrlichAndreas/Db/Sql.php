@@ -336,4 +336,3 @@ class EhrlichAndreas_Db_Sql
 	}
 }
 
-?>

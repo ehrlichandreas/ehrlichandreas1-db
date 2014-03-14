@@ -164,4 +164,3 @@ class EhrlichAndreas_Db_Insert extends EhrlichAndreas_Db_Sql
     }
 }
 
-?>

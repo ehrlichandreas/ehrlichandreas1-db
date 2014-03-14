@@ -571,4 +571,3 @@ abstract class EhrlichAndreas_Db_Statement implements EhrlichAndreas_Db_Statemen
     }
 }
 
-?>

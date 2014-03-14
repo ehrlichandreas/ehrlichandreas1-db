@@ -23,4 +23,3 @@ class EhrlichAndreas_Db_ZF2Bridge_Statement extends EhrlichAndreas_Db_Adapter_Pd
     
 }
 
-?>

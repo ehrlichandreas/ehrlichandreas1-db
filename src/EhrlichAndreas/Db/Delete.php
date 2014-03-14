@@ -111,4 +111,3 @@ class EhrlichAndreas_Db_Delete extends EhrlichAndreas_Db_Where
     }
 }
 
-?>

@@ -471,4 +471,3 @@ abstract class EhrlichAndreas_Db_Adapter_Pdo_Abstract extends EhrlichAndreas_Db_
     }
 }
 
-?>

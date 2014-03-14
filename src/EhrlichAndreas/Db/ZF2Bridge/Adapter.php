@@ -607,4 +607,3 @@ class EhrlichAndreas_Db_ZF2Bridge_Adapter extends EhrlichAndreas_Db_Adapter_Pdo_
     }
 }
 
-?>

@@ -145,4 +145,3 @@ class EhrlichAndreas_Db_Where extends EhrlichAndreas_Db_Sql
     }
 }
 
-?>

@@ -78,4 +78,3 @@ class EhrlichAndreas_Db_Adapter_Pdo_Oci_Statement extends EhrlichAndreas_Db_Adap
     }
 }
 
-?>

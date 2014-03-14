@@ -1487,4 +1487,3 @@ class EhrlichAndreas_Db_Select extends EhrlichAndreas_Db_Where
     }
 }
 
-?>

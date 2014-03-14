@@ -1485,4 +1485,3 @@ abstract class EhrlichAndreas_Db_Adapter_Abstract
     abstract public function getServerVersion ();
 }
 
-?>

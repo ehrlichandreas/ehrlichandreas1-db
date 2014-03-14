@@ -202,4 +202,3 @@ interface EhrlichAndreas_Db_Statement_Interface
     public function setFetchMode ($mode);
 }
 
-?>

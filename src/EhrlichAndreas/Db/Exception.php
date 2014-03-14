@@ -11,4 +11,3 @@ class EhrlichAndreas_Db_Exception extends EhrlichAndreas_Util_Exception
 {
 }
 
-?>

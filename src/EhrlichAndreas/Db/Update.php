@@ -187,4 +187,3 @@ class EhrlichAndreas_Db_Update extends EhrlichAndreas_Db_Where
     }
 }
 
-?>

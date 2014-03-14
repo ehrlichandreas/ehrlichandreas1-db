@@ -226,4 +226,3 @@ class EhrlichAndreas_Db_Db extends EhrlichAndreas_Db_Abstract
     }
 }
 
-?>

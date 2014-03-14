@@ -53,4 +53,3 @@ class EhrlichAndreas_Db_Expr
     }
 }
 
-?>

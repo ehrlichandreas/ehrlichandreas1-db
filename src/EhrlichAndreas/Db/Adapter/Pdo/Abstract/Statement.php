@@ -509,4 +509,3 @@ class EhrlichAndreas_Db_Adapter_Pdo_Abstract_Statement extends EhrlichAndreas_Db
     }
 }
 
-?>
