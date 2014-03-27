@@ -45,17 +45,38 @@ abstract class EhrlichAndreas_Db_Adapter_Pdo_Abstract extends EhrlichAndreas_Db_
 
         // don't pass the username, password, charset, persistent and
         // driver_options in the DSN
-        unset($dsn['username']);
         
-        unset($dsn['password']);
-        
-        unset($dsn['options']);
-        
-        unset($dsn['charset']);
-        
-        unset($dsn['persistent']);
-        
-        unset($dsn['driver_options']);
+        foreach ($dsn as $key => $value)
+        {
+            if (stripos($key, 'user') !== false)
+            {
+                unset($dsn[$key]);
+            }
+            elseif (stripos($key, 'pass') !== false)
+            {
+                unset($dsn[$key]);
+            }
+            elseif (stripos($key, 'option') !== false)
+            {
+                unset($dsn[$key]);
+            }
+            elseif (stripos($key, 'driver') !== false)
+            {
+                unset($dsn[$key]);
+            }
+            elseif (stripos($key, 'persistent') !== false)
+            {
+                unset($dsn[$key]);
+            }
+            elseif (stripos($key, 'charset') !== false)
+            {
+                unset($dsn[$key]);
+            }
+            elseif (is_array($value))
+            {
+                unset($dsn[$key]);
+            }
+        }
 
         if ($dsn['host'] == 'localhost' && empty($dsn['unix_socket']))
         {
@@ -107,6 +128,37 @@ abstract class EhrlichAndreas_Db_Adapter_Pdo_Abstract extends EhrlichAndreas_Db_
         }
 
         */
+        
+        foreach ($this->_config as $key => $value)
+        {
+            if (stripos($key, 'user') !== false)
+            {
+                $this->_config['username'] = $value;
+            }
+            elseif (stripos($key, 'pass') !== false)
+            {
+                $this->_config['password'] = $value;
+            }
+            elseif (stripos($key, 'driver') !== false && stripos($key, 'option') !== false)
+            {
+                if (! isset($this->_config['driver_options']))
+                {
+                    $this->_config['driver_options'] = $value;
+                }
+                else
+                {
+                    $this->_config['driver_options'] = array_merge($this->_config['driver_options'], $value);
+                }
+            }
+            elseif (stripos($key, 'persistent') !== false)
+            {
+                $this->_config['persistent'] = $value;
+            }
+            elseif (stripos($key, 'charset') !== false)
+            {
+                $this->_config['charset'] = $value;
+            }
+        }
 
         // create PDO connection
         // $q = $this->_profiler->queryStart('connect',
