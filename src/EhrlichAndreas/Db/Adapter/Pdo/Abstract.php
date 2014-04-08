@@ -147,7 +147,11 @@ abstract class EhrlichAndreas_Db_Adapter_Pdo_Abstract extends EhrlichAndreas_Db_
                 }
                 else
                 {
-                    $this->_config['driver_options'] = array_merge($this->_config['driver_options'], $value);
+                    // can't use array_merge() because keys might be integers
+                    foreach ((array) $value as $key => $val)
+                    {
+                        $this->_config['driver_options'][$key] = $val;
+                    }
                 }
             }
             elseif (stripos($key, 'persistent') !== false)
