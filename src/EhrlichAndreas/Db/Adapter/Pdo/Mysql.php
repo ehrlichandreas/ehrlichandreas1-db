@@ -84,7 +84,9 @@ class EhrlichAndreas_Db_Adapter_Pdo_Mysql extends EhrlichAndreas_Db_Adapter_Pdo_
         {
             $initCommand = "SET NAMES '" . $this->_config['charset'] . "'";
             
-            if (isset($this->_config['driver_options'][1002]))
+            $initCommand = rtrim($initCommand, ';');
+            
+            if (isset($this->_config['driver_options'][1002]) && strpos($this->_config['driver_options'][1002], $initCommand) === false)
             {
                 $initCommand = rtrim($this->_config['driver_options'][1002], ';') . ';' . $initCommand;
             }
