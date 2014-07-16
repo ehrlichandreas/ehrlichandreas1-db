@@ -93,6 +93,25 @@ class EhrlichAndreas_Db_Db extends EhrlichAndreas_Db_Abstract
              */
             throw new EhrlichAndreas_Db_Exception('Adapter parameters must be in an array or a Iterator object');
         }
+        
+        if (isset($config['dsn']))
+        {
+            $dsn = EhrlichAndreas_Util_Dsn::parseDsn($config['dsn']);
+            
+            $uri = EhrlichAndreas_Util_Dsn::parseUri($config['dsn']);
+            
+            $driver_name = $uri[0];
+            
+            $config = $config + $dsn;
+
+            /*
+             * Verify that an adapter name has been specified.
+             */
+            if ((! is_string($adapter) || empty($adapter)) && isset($config['driver']) && stripos($config['driver'], '_') === false)
+            {
+                $adapter = $config['driver'] . '_' . $driver_name;
+            }
+        }
 
         /*
          * Verify that an adapter name has been specified.
