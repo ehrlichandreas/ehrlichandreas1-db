@@ -48,6 +48,10 @@ abstract class EhrlichAndreas_Db_Adapter_Pdo_Abstract extends EhrlichAndreas_Db_
         
         foreach ($dsn as $key => $value)
         {
+            if (stripos($key, 'dsn') !== false)
+            {
+                unset($dsn[$key]);
+            }
             if (stripos($key, 'user') !== false)
             {
                 unset($dsn[$key]);
@@ -57,6 +61,10 @@ abstract class EhrlichAndreas_Db_Adapter_Pdo_Abstract extends EhrlichAndreas_Db_
                 unset($dsn[$key]);
             }
             elseif (stripos($key, 'option') !== false)
+            {
+                unset($dsn[$key]);
+            }
+            elseif (stripos($key, 'adapter') !== false)
             {
                 unset($dsn[$key]);
             }
