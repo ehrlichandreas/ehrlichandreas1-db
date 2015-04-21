@@ -18,7 +18,8 @@
     {
         "psr-0": 
         {
-            "EhrlichAndreas":   "src/"
+            "EhrlichAndreas":   "src/",
+            "Zend_Db_Expr":     "src/"
         }
     },
     "repositories":
