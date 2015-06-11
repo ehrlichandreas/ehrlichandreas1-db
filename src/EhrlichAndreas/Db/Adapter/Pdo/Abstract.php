@@ -84,6 +84,10 @@ abstract class EhrlichAndreas_Db_Adapter_Pdo_Abstract extends EhrlichAndreas_Db_
             {
                 unset($dsn[$key]);
             }
+            elseif (is_object($value))
+            {
+                unset($dsn[$key]);
+            }
         }
 
         if ($dsn['host'] == 'localhost' && empty($dsn['unix_socket']))
