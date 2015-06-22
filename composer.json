@@ -1,7 +1,7 @@
 {
     "name":         "ehrlichandreas/ehrlichandreas1-db",
     "description":  "Zend Framework like database module",
-    "type":         "util",
+    "type":         "library",
     "keywords": 
     [
     ],
@@ -30,6 +30,7 @@
         "php":                                  ">=5.1",
         
         "ehrlichandreas/composer-php52":        "*",
+        
         "ehrlichandreas/ehrlichandreas1-pdo":   "dev-master",
         "ehrlichandreas/ehrlichandreas1-util":  "dev-master"
     },
