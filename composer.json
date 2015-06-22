@@ -24,21 +24,12 @@
     },
     "repositories":
     [
-        {
-            "type": "git",
-            "url": "https://github.com/ehrlichandreas/ehrlichandreas1-util.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/ehrlichandreas/ehrlichandreas1-pdo.git"
-        }
     ],
     "require": 
     {
         "php":                                  ">=5.1",
         
         "ehrlichandreas/ehrlichandreas1-pdo":   "dev-master",
-        
         "ehrlichandreas/ehrlichandreas1-util":  "dev-master"
     },
     "require-dev":
