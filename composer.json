@@ -1,7 +1,7 @@
 {
     "name":         "ehrlichandreas/ehrlichandreas1-db",
     "description":  "Zend Framework like database module",
-    "type":         "util",
+    "type":         "library",
     "keywords": 
     [
     ],
@@ -24,21 +24,14 @@
     },
     "repositories":
     [
-        {
-            "type": "git",
-            "url": "https://github.com/ehrlichandreas/ehrlichandreas1-util.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/ehrlichandreas/ehrlichandreas1-pdo.git"
-        }
     ],
     "require": 
     {
         "php":                                  ">=5.1",
         
-        "ehrlichandreas/ehrlichandreas1-pdo":   "dev-master",
+        "ehrlichandreas/composer-php52":        "*",
         
+        "ehrlichandreas/ehrlichandreas1-pdo":   "dev-master",
         "ehrlichandreas/ehrlichandreas1-util":  "dev-master"
     },
     "require-dev":
@@ -46,5 +39,17 @@
     },
     "scripts":
     {
+        "post-install-cmd":
+        [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-update-cmd":
+        [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-autoload-dump":
+        [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ]
     }
 }
