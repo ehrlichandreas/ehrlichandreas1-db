@@ -92,7 +92,7 @@ abstract class EhrlichAndreas_Db_Adapter_Pdo_Abstract extends EhrlichAndreas_Db_
 
         if ($dsn['host'] == 'localhost' && empty($dsn['unix_socket']))
         {
-            $dsn['host'] = '127.0.0.1';
+            //$dsn['host'] = '127.0.0.1';
         }
 
         // use all remaining parts in the DSN
